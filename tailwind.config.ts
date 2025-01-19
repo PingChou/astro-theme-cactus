@@ -60,12 +60,21 @@ export default {
 						a: {
 							"@apply cactus-link": "",
 						},
-						blockquote: {
-							borderLeftWidth: "0",
-						},
+						// blockquote: {
+						// 	borderLeftWidth: "0",
+						// },
 						code: {
-							border: "1px dotted #666",
-							borderRadius: "2px",
+							border: "1px solid #dee0e3",
+							borderRadius: "4px",
+							"&:before": {
+								display: "none",
+							},
+							"&:after": {
+								display: "none",
+							},
+							// margin: "0 3px",
+							// padding: "1px",
+							"@apply mx-1 p-px bg-neutral-100 dark:bg-black": "",
 						},
 						kbd: {
 							"@apply dark:bg-textColor": "",

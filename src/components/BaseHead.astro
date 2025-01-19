@@ -19,7 +19,8 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <title>{siteTitle}</title>
 
 {/* Icons */}
-<link href="/icon.svg" rel="icon" type="image/svg+xml" />
+<!-- <link href="/icon.svg" rel="icon" type="image/svg+xml" /> -->
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
 {
 	import.meta.env.PROD && (
 		<>
@@ -63,11 +64,11 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 }
 
 {/* Twitter */}
-<meta content="summary_large_image" property="twitter:card" />
+<!-- <meta content="summary_large_image" property="twitter:card" />
 <meta content={canonicalURL} property="twitter:url" />
 <meta content={title} property="twitter:title" />
 <meta content={description} property="twitter:description" />
-<meta content={socialImageURL} property="twitter:image" />
+<meta content={socialImageURL} property="twitter:image" /> -->
 
 {/* Sitemap */}
 <link href="/sitemap-index.xml" rel="sitemap" />
