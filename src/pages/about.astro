@@ -1,5 +1,7 @@
 ---
 import PageLayout from "@/layouts/Base.astro";
+import { Icon } from "astro-icon/components";
+
 
 const meta = {
 	description: "leo.zhou's blog about coding and life",
@@ -8,8 +10,13 @@ const meta = {
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="title mb-6">About</h1>
-	<div class="prose prose-sm prose-cactus max-w-none">
+  <div class="flex items-center">
+
+     <Icon aria-hidden="true" focusable="false" name="logo" class="me-3 h-20 w-40 flex items-center"/>
+  </div>
+  <div class="indent-2">欢迎来到我的博客👏</div>
+
+	<!-- <div class="prose prose-sm prose-cactus max-w-none">
 		<p>
 			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
 			website.
@@ -33,5 +40,5 @@ const meta = {
 				target="_blank">repo</a
 			> if you like me!
 		</p>
-	</div>
+	</div> -->
 </PageLayout>
